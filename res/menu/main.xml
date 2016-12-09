@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fstcart.fastcart.MainActivity" >
+
+    <item android:id="@+id/barkodlar"
+          android:title="OKU"
+          android:showAsAction="always"
+          android:actionLayout="@layout/barogeleri"  />
+
+</menu>

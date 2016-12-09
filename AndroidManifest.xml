@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fstcart.fastcart"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19" />
+       
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.fstcart.fastcart.MainActivity"
+            android:label="@string/app_name" android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.fstcart.fastcart.KullaniciKaydet" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:parentActivityName="com.fstcart.fastcart.MainActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fstcart.fastcart.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.fstcart.fastcart.KullaniciGirisi" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:parentActivityName="com.fstcart.fastcart.MainActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fstcart.fastcart.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.fstcart.fastcart.KullaniciİslemMenusu" android:screenOrientation="portrait" android:theme="@style/HOLO" android:parentActivityName="com.fstcart.fastcart.MainActivity" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fstcart.fastcart.MainActivity" />
+        </activity>
+       <activity android:name="com.fstcart.fastcart.KrediKartOdeme" android:label="ÖDEME" android:theme="@style/HOLO" android:parentActivityName="com.fstcart.fastcart.MainActivity">
+           <meta-data android:name="android:support.PARENT_ACTIVITY" android:value="com.fstcart.fastcart.MainActivity" />
+       </activity>
+        <activity android:name="com.fstcart.fastcart.Ködeme" android:label="KREDİ KARTI İLE ÖDEME" android:theme="@style/HOLO" android:parentActivityName="com.fstcart.fastcart.MainActivity">
+            <meta-data android:name="android:support.PARENT_ACTIVITY" android:value="com.fstcart.fastcart.MainActivity" />
+        </activity>
+        <activity android:name="com.fstcart.fastcart.MobilÖdemeler" android:label="MOBİL ÖDEME" android:theme="@style/HOLO" android:parentActivityName="com.fstcart.fastcart.MainActivity">
+            <meta-data android:name="android:support.PARENT_ACTIVITY" android:value="com.fstcart.fastcart.MainActivity" />
+        </activity>
+        <activity android:name=".SplashEkran" android:theme="@style/Theme.Base.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

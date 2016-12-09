@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cb3838"
+    android:orientation="vertical" >
+
+  <LinearLayout android:id="@+id/orta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="100dp" >
+    <EditText
+        android:id="@+id/isim"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:hint="İSİM"
+        android:background="#FFFFFF"
+       />
+
+        <requestFocus />
+
+    <EditText
+        android:id="@+id/soyisim"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:hint="SOYİSİM"
+     
+         />
+
+    <EditText
+        android:id="@+id/kulisim"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:hint="E-MAİL"
+        android:inputType="textEmailAddress"
+        
+        />
+
+    <EditText
+        android:id="@+id/sifre"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:hint="ŞİFRE"
+        android:ems="10"
+        android:inputType="textPassword" 
+        />
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:text="GİRİŞ" 
+        />
+      
+      
+  </LinearLayout>
+</LinearLayout>

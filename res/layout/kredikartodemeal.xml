@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#cb3838"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="130dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:background="#FFFFFF"
+                android:hint="İSİM"
+                android:id="@+id/is"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:inputType="textPersonName"
+                android:layout_marginTop="10dp"
+                android:hint="SOYİSİM"
+                android:id="@+id/sis"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:inputType="number"
+                android:hint="KREDİ KART NUMARASI"
+                android:layout_marginTop="10dp"
+                android:ems="20"
+                android:id="@+id/knumara"
+                android:layout_gravity="center_horizontal"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:hint="CVC NUMARASI"
+                android:ems="30"
+                android:id="@+id/cvc"/>
+        <Button android:id="@+id/odemeler"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:layout_width="fill_parent"
+                android:text="ÖDEME YAP"
+                android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>
